@@ -1,0 +1,615 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+
+* {
+  box-sizing: border-box;
+}
+
+.category_check input[type="checkbox"] {
+  margin-right: 20px;
+}
+/* 새로 설정 */
+.fs {
+  font-size: large;
+  font-weight: 600;
+  color: #375986;
+}
+
+.fs_w {
+  font-size: large;
+  font-weight: 600;
+  color: white;
+}
+
+.just_right {
+  justify-content: right;
+  display: flex;
+}
+
+.just_between {
+  justify-content: space-between;
+  display: flex;
+}
+
+.button {
+  background: #092d5a;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 20px;
+  margin: 5px 5px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.24);
+}
+
+.date {
+  border: none;
+  padding: 15px 45px;
+  margin: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.24);
+}
+
+.button_option {
+  border: none;
+  padding: 15px 45px;
+  margin: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.24);
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px; /* 내용과 상하좌우 여백을 원하는 크기로 지정하세요 */
+  text-align: center; /* 텍스트 정렬 방식을 지정하세요 */
+}
+
+.header {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px; /* 내용과 상하좌우 여백을 원하는 크기로 지정하세요 */
+  text-align: center; /* 텍스트 정렬 방식을 지정하세요 */
+}
+
+.left_menu {
+  display: flex;
+  justify-content: right;
+}
+
+.popup p {
+  font-size: 30px;
+}
+
+.container {
+  padding: 20px 0;
+  margin: 0px 100px;
+}
+
+.main {
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.24) s;
+}
+
+.suject {
+  line-height: 135%;
+  width: 16%;
+}
+
+/*  테이블 /////////////////////////////////////////////////////////// */
+.table td .input {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0px;
+  background: white;
+  font-size: large;
+  font-weight: 600;
+  width: 90%;
+  box-sizing: border-box;
+  color: black;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+}
+
+.table td textarea {
+  height: 200px;
+}
+
+tr.fixed-height {
+  height: 50px; /* 원하는 높이로 설정 */
+}
+
+/*  테이블 /////////////////////////////////////////////////////////// */
+
+.popup_table {
+}
+
+/* 팝업 */
+.popup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  max-width: 960px;
+  max-height: 900px;
+  padding: 50px 20px 50px;
+  box-shadow: 0 16px 48px 0 rgba(0, 0, 0, 0.12);
+  border: solid 1px #e4e4e4;
+  background-color: #fff;
+  z-index: 9;
+  border-radius: 16px;
+  z-index: 99999;
+}
+
+/* 텍스트 영역의 높이와 너비 조절 */
+.textarea {
+  height: 150px;
+  /* 높이 지정 */
+  width: 100%;
+  /* 너비 지정 */
+  color: #375986;
+  /* 다른 스타일링을 추가할 수 있습니다 */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.24);
+  /* 사용자가 크기를 조절하지 못하도록 설정 */
+}
+
+/* 포커스 상태일 때 스타일 변경 */
+.textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/*  */
+
+.margin-top-200 {
+  display: flex;
+  margin-top: 200px;
+}
+
+.margin-top-100 {
+  display: flex;
+  margin-top: 100px;
+}
+
+.span {
+  display: inline-block;
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+}
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+}
+
+.nowrap {
+  white-space: nowrap;
+  /* padding: 30px 300px; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.login-wrap {
+  width: 100%;
+  margin: auto;
+  max-width: 300px;
+  position: relative;
+}
+
+.login-html {
+  width: 100%;
+  height: 100%;
+}
+
+.tab {
+  padding-left: 10px;
+  font-size: 30px;
+  margin-right: 15px;
+  padding-bottom: 10px;
+  margin: 0 15px 10px 0;
+  display: inline-block;
+  color: #fff;
+}
+
+.input {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: white;
+  font-size: large;
+  font-weight: 600;
+  width: 100%;
+  box-sizing: border-box;
+  color: #375986;
+  box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.24);
+}
+.input::placeholder {
+  color: #375986;
+}
+
+.label {
+  color: #aaa;
+  font-size: 12px;
+  width: 100%;
+  display: block;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.group {
+  margin-bottom: 15px;
+}
+
+.login-form {
+  min-height: 345px;
+  position: relative;
+  /* perspective: 1000px;
+    transform-style: preserve-3d; */
+}
+
+select {
+  border: none;
+  padding: 15px 45px;
+  margin: 10px;
+  color: black;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.24);
+}
+
+select option {
+  font-size: 16px; /* 원하는 글꼴 크기로 조정하세요 */
+}
+
+/* ---------------------------------------------- 테이블 */
+
+body {
+  background-color: #3e94ec;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+}
+
+.table-title {
+  display: block;
+  margin: auto;
+  max-width: 600px;
+  padding: 5px;
+  width: 100%;
+}
+
+.table-title h3 {
+  color: #fafafa;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+
+/*** Table Styles **/
+
+.table {
+  margin: 0px 10px;
+  background: white;
+  border-radius: 3px;
+  border-collapse: collapse;
+
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+th {
+  font-size: 17px;
+  color: white;
+  line-height: 20px; /* 원하는 높이로 지정 */
+  background: #42619d;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid white;
+  font-weight: 500;
+  padding: 12px 0px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+td {
+  font-size: 15px !important;
+  line-height: 20px; /* 원하는 높이로 지정 */
+  background: #ffffff;
+  padding-left: 5px;
+  vertical-align: middle;
+  font-weight: 400;
+  font-size: 12px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+th:first-child {
+  border-top-left-radius: 3px;
+}
+
+th:last-child {
+  border-top-right-radius: 3px;
+  border-right: none;
+}
+
+tr {
+  border: 1px solid black;
+  background-color: #42619d;
+  border-top: 1px solid #c1c3d1;
+  border-bottom: 1px solid #c1c3d1;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+td,
+th {
+  line-height: 15px; /* 원하는 높이로 지정 */
+  text-align: center;
+}
+
+tr:first-child {
+  border-top: none;
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+tr:nth-child(odd) td {
+  /* background: #ebebeb; */
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: 3px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 3px;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}
+
+/* menu */
+
+/* 왼쪽 메뉴 스타일 */
+.menu {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  background-color: #1b1e24;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 0;
+  padding: 10px 20px;
+  border-bottom: 1px solid #343a45;
+  text-align: left;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 10px;
+
+  margin-bottom: 10px;
+}
+
+.menu a:hover {
+  color: #1161ee;
+}
+
+/* ------------------- */
+
+.table_label {
+  color: white;
+}
+
+.PopUp_input_wrap .input-title {
+  position: absolute;
+  top: 18%;
+  transform: translateY(-50%);
+  left: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.45px;
+  color: #303030;
+}
+
+.PopUp_input_wrap .input-box {
+  position: relative;
+  width: 720px;
+  margin-bottom: 16px;
+}
+
+.PopUp_input_wrap .input-box .company_name {
+  width: 100%;
+  height: 60px;
+  border-radius: 36px;
+  border: unset;
+  padding: 0 24px 0 165px;
+  font-weight: 500;
+  color: #303030;
+  border-radius: 24px;
+  border: solid 1px #e4e4e4;
+  background-color: #fff;
+}
+
+.company_name {
+  width: 100%;
+  height: 60px;
+  border-radius: 36px;
+  border: unset;
+  padding: 0 24px 0 165px;
+  font-weight: 500;
+  color: #303030;
+  border-radius: 24px;
+  border: solid 1px #e4e4e4;
+  background-color: #fff;
+}
+
+.input-box textarea {
+  width: 100%;
+  height: 257px;
+  padding: 70px 40px 10px;
+  outline: unset;
+  border: unset;
+  border-radius: 36px;
+  font-weight: 500;
+  border: solid 0.5px #e4e4e4;
+  background-color: #fff;
+}
+
+.repo .input-title {
+  top: 26px;
+  left: 40px;
+}
+
+#pageNum{
+    margin-top: 20px;
+}
+#pageNum a,
+#pageNum b {
+  margin: 5px;
+}
+
+.on {
+  color: #007bff;
+}
+/*  모바일 */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+    /* 모바일에 맞게 폰트 크기를 조정 */
+  }
+  * {
+    box-sizing: content-box;
+  }
+  .container {
+    margin: auto;
+    overflow: hidden;
+  }
+  .main {
+    /* width: 350px; */
+    padding: 20px;
+    overflow: scroll;
+    border: 1px solid #000;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  select {
+    padding: 10px 25px;
+    margin: 5px;
+  }
+  .nowrap {
+    white-space: unset;
+  }
+  .popup {
+  }
+  .just_right {
+    justify-content: center;
+  }
+  .input-box textarea {
+    height: 125px;
+    padding: 70px 40px 10px;
+  }
+  
+  .button_option {
+    padding: 15px 27px;
+  }
+  .table td .input[type="text"] {
+    width: 250px;
+  }
+  .date {
+    padding: 15px 27px;
+  }
+  .PopUp_input_wrap {
+    display: flex;
+    justify-content: center;
+  }
+  .PopUp_input_wrap .input-box {
+    width: 370px !important;
+  }
+  .popup {
+    top: 50%;
+  }
+  .PopUp_input_wrap {
+    display: inline;
+  }
+  .input-box .textarea {
+    width: 290px !important;
+  }
+  .PopUp_input_wrap .category_check {
+    display: flex;
+  }
+  .cloumn {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
