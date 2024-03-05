@@ -96,25 +96,4 @@ define('SERVER',$serverPath);
 // @붙이고 하면 오류코드 제거 가능.
 // @include ('../member/memberController.php');
 
-# 사이트 접속 정보
-// 54.180.131.137:8080
-
-// FTP주소 : cscenter.co.kr
-// FTP아이디 : mycscenter
-// 패스워드 : rkddkwl0210! (강아지0210!)
-
-// DB HOST : localhost
-// DB NAME : mycscenter_godohosting_com
-// DB 아이디 : mycscenter
-// DB패스워드 : rkddkwl0210! (강아지0210!)
-
-// # DB 정보
-// IP : 54.180.131.137
-// 포트 :3336
-// 아이디 : site
-// 비번 : 1q2w3e00
-// DB명 : db_site
-
-// $EXECL_FIIE = '';
-
 ?>
